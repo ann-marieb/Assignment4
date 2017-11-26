@@ -82,7 +82,7 @@ namespace Assignment4
             DialogResult dialogResult = formIngredientsObj.ShowDialog();
             if (dialogResult == DialogResult.OK)
             {
-                recipeObj1 = formIngredientsObj.Recipe;
+                recipeObj1 = formIngredientsObj.Recipe; // change reference to recipe object created by FormIngredients
                 UpdateGuiList();
             }
         }

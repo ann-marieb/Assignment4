@@ -60,8 +60,7 @@ namespace Assignment4
             txtIngredient.Clear(); // Clear ingredient textbox to enable new input
             txtIngredient.Focus(); //cursor back to ingredient textbox
         }
-
-
+        
 
             /// <summary>
             /// add ingredient to recipeObj2 on "Add ingredient" click
