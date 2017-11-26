@@ -19,7 +19,7 @@ namespace Assignment4
         private const int maxNumOfRecipes = 50; //max number of recipes possible
         private int selectedListIndex;
 
-        Recipe recipeObj1 = new Recipe(maxNumOfIngredients); //create temporary recipe object
+        Recipe recipeObj1 = new Recipe(maxNumOfIngredients); //create recipe object
         RecipeManager recipeManagerObj = new RecipeManager(maxNumOfRecipes); // create recipe manager object
         
         //constructor
@@ -77,7 +77,7 @@ namespace Assignment4
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnEditIngredients_Click(object sender, EventArgs e)
-        {
+        { 
             FormIngredients formIngredientsObj = new FormIngredients(new Recipe (recipeObj1)); // create object
             DialogResult dialogResult = formIngredientsObj.ShowDialog();
             if (dialogResult == DialogResult.OK)
